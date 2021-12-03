@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#navigator {
+    background-color: rgb(42, 42, 42);
+}
+
+#navigator ul li {
+    list-style: none;
+}
+
+#navigator ul li a {
+    display: inline-block;
+    background-color: green;
+    padding: 15px 32px;
+    border-radius: 5px;
+}
+
+#navigator ul li a:hover {
+
+}
+
+header {
+    background-image: url('./resources/matt-palmer-K5KmnZHv1Pg-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#contents {
+    margin: 0;
+}
+
+p, h1, h2, h3, h4 {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
