@@ -22,6 +22,10 @@ body, html {
 
 }
 
+p, h1, h2, a {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 header {
     background-image: url('./resources/matt-palmer-K5KmnZHv1Pg-unsplash.jpg');
     background-position: center;
@@ -30,12 +34,38 @@ header {
     height: 100%;
 }
 
-#contents {
-    margin: 0;
+main {
+    display: flex;
+    margin: 2;
+    margin-left: 50px;
 }
 
-p, h1, h2, h3, h4 {
+.card {
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+#maincontents {
+    padding-top: 33vh;
     color: white;
     text-align: center;
-    margin: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#maincontents p, h1, h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+}
+
+#maincontents h1 {
+    font-size: 3em;
+}
+
+#maincontents a:visited, a:link, a:active {
+    color:white;
+}
+
+#maincontents a:hover {
+    color:rgb(170, 170, 170);
+    transition: color .5s;
 }
