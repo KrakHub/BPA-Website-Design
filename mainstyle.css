@@ -18,10 +18,6 @@ body, html {
     border-radius: 5px;
 }
 
-#navigator ul li a:hover {
-
-}
-
 p, h1, h2, a {
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -35,13 +31,23 @@ header {
 }
 
 main {
-    display: flex;
-    margin: 2;
-    margin-left: 50px;
+    margin: 30px;
 }
+#card1{grid-area:c1;}
+#card2{grid-area:c2;}
+#card3{grid-area:c3;}
 
+#cardscontainer{
+    display: grid;
+    grid-template-columns: auto repeat(3, 350px) auto;
+    column-gap: 30px;
+    grid-template-areas:
+        ". c1 c2 c3 .";
+}
 .card {
     box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+    padding: 5px;
+    height: 700px;
 }
 
 #maincontents {
