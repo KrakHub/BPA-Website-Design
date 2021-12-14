@@ -28,26 +28,43 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    transition: 500ms;
 }
 
 main {
     margin: 30px;
 }
-#card1{grid-area:c1;}
-#card2{grid-area:c2;}
-#card3{grid-area:c3;}
+#card1 {grid-area: c1;}
+#card2 {grid-area: c2;}
+#card3 {grid-area: c3;}
 
-#cardscontainer{
-    display: grid;
-    grid-template-columns: auto repeat(3, 350px) auto;
-    column-gap: 30px;
-    grid-template-areas:
-        ". c1 c2 c3 .";
+@media(min-width: 1350px) {
+    #cardscontainer{
+        display: grid;
+        grid-template-columns: auto repeat(3, 400px) auto;
+        column-gap: 30px;
+        grid-template-areas:
+            ". c1 c2 c3 .";
+        text-align: center;
+    }
 }
+
+@media(max-width: 1350px) {
+    #cardscontainer{
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-areas:
+            ". c1 ."
+            ". c2 ."
+            ". c3 .";
+    }
+}
+
 .card {
     box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
-    padding: 5px;
-    height: 700px;
+    height: 500px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 #maincontents {
